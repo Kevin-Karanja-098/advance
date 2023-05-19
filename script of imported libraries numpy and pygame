@@ -1,0 +1,26 @@
+import numpy as np
+A = np.array([[1,2,3],
+              [4,5,6],
+              [7,8,9]])
+
+B =np.array([[1,2,3],
+              [4,5,6],
+              [7,8,9]]) 
+
+print(np.multiply(A,B))
+
+from numpy.linalg import matrix_power
+print (matrix_power(B, 3))
+
+import pygame
+WIDTH,HEIGHT=400,400
+field=pygame.display.set_mode((WIDTH,HEIGHT))
+pygame.display.set_caption(' kevin please draw')
+x=200
+y=200
+width=20
+heght=20
+
+field.fill((0,0,0))
+pygame.draw.rect(field,(127,255,0),(x,y,width,heght))
+pygame.display.update()
